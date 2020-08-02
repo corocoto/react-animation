@@ -48,7 +48,6 @@ bower_components
 connect.lock
 typings
 package-lock.json
-yarn.lock
 
 # Logs
 logs
