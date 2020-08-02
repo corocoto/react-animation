@@ -1,0 +1,28 @@
+.List {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 280px;
+}
+
+.ListItem {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px solid #4ca9df;
+    border-right: 1px solid #4ca9df;
+    border-left: 1px solid #4ca9df;
+}
+
+.ListItem:last-child{
+    border-bottom: 1px solid #4ca9df;
+}
+
+.ListItem:hover,
+.ListItem:active {
+    background-color: #ccc;
+}
