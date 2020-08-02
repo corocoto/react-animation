@@ -1,10 +1,9 @@
-import React, {Component} from "react";
-import { Transition } from 'react-transition-group';
+import React, {Component} from 'react';
 
-import "./App.css";
-import Modal from "./components/Modal/Modal";
-import Backdrop from "./components/Backdrop/Backdrop";
-import List from "./components/List/List";
+import './App.css';
+import Modal from './components/Modal/Modal';
+import Backdrop from './components/Backdrop/Backdrop';
+import List from './components/List/List';
 
 class App extends Component {
     constructor(props) {
@@ -27,17 +26,9 @@ class App extends Component {
         return (
             <div className="App">
                 <h1>React Animations</h1>
-                <Transition
-                    in={this.state.isShowModal}
-                    timeout={400}
-                    mountOnEnter
-                    unmountOnExit
-                >
-                    {state => <Modal
-                        show={state}
-                        closed={this.closeModal}
-                    />}
-                </Transition>
+                <Modal
+                    show={this.state.isShowModal}
+                    closed={this.closeModal}/>
                 {this.state.isShowModal ? <Backdrop show={this.state.isShowModal}/> : null}
                 <button
                     className="Button"
